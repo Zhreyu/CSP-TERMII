@@ -43,9 +43,9 @@ def display(dum):
         for k in range(top-1,-1,-1):
             print(dum[k])
 
-while True:
+def menu():
     print('--------------------------------------')
-    print('STACK IMPLEMENTATION')
+    print('MAIN MENU')
     print('1. Push')
     print('2. Pop')
     print('3. Peek')
@@ -61,6 +61,7 @@ while True:
         push(student,Item)
         print(Item,'added sucessfully!!')
         input('Press any key to continue... ')
+        menu()
 
     elif op == 2:
         item=pop(student)
@@ -69,6 +70,7 @@ while True:
         else:
             print(item,'is popped')
         input('Press any key to continue... ')
+        menu()
 
     elif op == 3:
         item=peek(student)
@@ -77,11 +79,15 @@ while True:
         else:
             print(item,'is at the top')
         input('Press any key to continue... ')
+        menu()
 
     elif op == 4:
         display(student)
         input('Press any key to continue... ')
+        menu()
     elif op ==5:
         break
     else:
         print('NOT A VALID INPUT')
+        menu()
+menu()        
