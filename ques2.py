@@ -86,7 +86,7 @@ def menu():
         input('Press any key to continue... ')
         menu()
     elif op ==5:
-        break
+        pass
     else:
         print('NOT A VALID INPUT')
         menu()
