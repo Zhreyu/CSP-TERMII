@@ -1,5 +1,7 @@
 /* question 4 */
-CREATE TABLE library
+/* THIS FILE WAS USED TO CREATE TABLES */
+/* ANSWERS ARE IN 'QUES4' FILE */
+CREATE TABLE Book
       ( Book_Id CHAR(10),
          Book_Name CHAR(15),
          Author_Name CHAR(17),
@@ -8,11 +10,11 @@ CREATE TABLE library
          Typee CHAR(10),
          Quantity INTEGER
        );
- INSERT INTO library VALUES ('C0001','Fast Cook','Lata Kapoor','EPB',355.00,'Cookery',5);
- INSERT INTO library VALUES ('F0001','The tears','Willian Hopkins','First pub.',650.00,'Fiction',20);
- INSERT INTO library VALUES ('T0001','My First C++','Brian & Broke','EPB',350.00,'Text',10);
- INSERT INTO library VALUES ('T0002','C++ Brain works','A.W. Rossaine','TDH',350.00,'Text',15);
- INSERT INTO library VALUES ('F0002','Thunderbolts','Anna Roberts','First pub',350.00,'Fiction',50);
+ INSERT INTO Book VALUES ('C0001','Fast Cook','Lata Kapoor','EPB',355.00,'Cookery',5);
+ INSERT INTO Book VALUES ('F0001','The tears','Willian Hopkins','First pub.',650.00,'Fiction',20);
+ INSERT INTO Book VALUES ('T0001','My First C++','Brian & Broke','EPB',350.00,'Text',10);
+ INSERT INTO Book VALUES ('T0002','C++ Brain works','A.W. Rossaine','TDH',350.00,'Text',15);
+ INSERT INTO Book VALUES ('F0002','Thunderbolts','Anna Roberts','First pub',350.00,'Fiction',50);
 
 CREATE TABLE Issued
           ( Book_Id CHAR(10),
