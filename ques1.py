@@ -1,20 +1,21 @@
 # Write a program in Python to create a stack name StackVow, which takes the
 # elements as vowels and implement all oprations (Push, POP and Traversal) on
 # stack StackVow 
-StackVow = []
+# Shreyas XII-B 52 (2021-2022)
+StackVow = [] # empty stack
 top = None
 
-def isEmpty(dum):
+def isEmpty(dum): # function to check if the stack is empty
     if dum ==[]:
         return True
     else:
         return False
 
-def push(dum, item):
+def push(dum, item): # push function
     dum.append(item)
     top = len(dum) - 1
 
-def pop(dum):
+def pop(dum):        # pop function
     if isEmpty(dum):
         return 'UnderFlow!!'
     else:
@@ -25,14 +26,14 @@ def pop(dum):
             top = -1
     return i
 
-def peek(dum):
+def peek(dum):          # function to return only top element
     if isEmpty(dum):
         return'UnderFlow!!'
     else:
         top=len(dum)-1
         return dum[top]
-
-def display(dum):
+ 
+def display(dum):        # function to print the whole stack 
     if isEmpty(dum):
         print('Stack is empty!!')
     else:
