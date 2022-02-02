@@ -2,6 +2,9 @@
 # elements as vowels and implement all oprations (Push, POP and Traversal) on
 # stack StackVow 
 # Shreyas XII-B 52 (2021-2022)
+
+# answer : 
+
 StackVow = [] # empty stack
 top = None
 
@@ -55,7 +58,7 @@ while True:
     op = int(input('ENTER CHOICE (1-5) : '))
     if op == 1:
         item = (input('Enter the item you want to push : '))
-        if item in['a','e','i','o','u','A','E','I','O','U']:
+        if item in['a','e','i','o','u','A','E','I','O','U']: # checks if the input is a vowel 
             push(StackVow,item)
             print(item,'added sucessfully!!')
         else:
