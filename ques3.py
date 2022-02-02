@@ -1,10 +1,13 @@
 # Write a python program to create stack Sport_Stack to store age of sportsman
 # using stack implementation as list. Write Operation for Push, Pop and Traversal
 # operation using menu
+# Shreyas XII-B 52 (2021-2022)
 
 # answer :
-Sport_Stack = []
+Sport_Stack = [] # initializing stack
 top = None
+
+# creating required functions 
 
 def isEmpty(dum):
     if dum ==[]:
@@ -92,4 +95,4 @@ def menu():
     else:
         print('NOT A VALID INPUT')
         menu()
-menu()
+menu() # calling the menu function 
