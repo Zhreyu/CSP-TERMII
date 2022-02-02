@@ -1,8 +1,11 @@
 # Write a program in python to create a stack “student” with details of student
 # name and their marks. Write Operation for Push, Pop and Traversal operation
 # using menu
-student = []
+# Shreyas XII-B 52 (2021-2022)
+student = [] # intializing stack
 top = None
+
+# creating required functions 
 
 def isEmpty(dum):
     if dum ==[]:
@@ -42,7 +45,7 @@ def display(dum):
         print(dum[top],'<---- TOP')
         for k in range(top-1,-1,-1):
             print(dum[k])
-
+# menu function
 def menu():
     print('--------------------------------------')
     print('MAIN MENU')
@@ -90,4 +93,4 @@ def menu():
     else:
         print('NOT A VALID INPUT')
         menu()
-menu()        
+menu()   # calling menu      
