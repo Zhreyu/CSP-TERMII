@@ -2,6 +2,9 @@
 # name and their marks. Write Operation for Push, Pop and Traversal operation
 # using menu
 # Shreyas XII-B 52 (2021-2022)
+
+# answer : 
+
 student = [] # intializing stack
 top = None
 
